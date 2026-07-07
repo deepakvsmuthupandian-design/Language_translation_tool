@@ -1,5 +1,3 @@
-# Language_translation_tool
-Core Functionality: Automatically translates text, speech, or documents between multiple global languages in real time using advanced machine learning models.  Key Features: Includes automatic source-language detection, high-accuracy contextual translation, and text-to-speech pronunciation assistance.
 # 🌐 Language Translation Tool
 
 A modern AI-powered **Language Translation Tool** built using **Python, Flask, HTML, CSS, JavaScript, and Google Translator (Deep Translator API)**. This application allows users to translate text between multiple languages with a simple and user-friendly interface.
