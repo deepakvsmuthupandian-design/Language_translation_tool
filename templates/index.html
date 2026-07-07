@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1><i class="fa-solid fa-language"></i> SpeakSphere </h1>
+            <p>Speak beyond boundaries</p>
+        </div>
+
+        <div class="translator-card">
+
+            <div class="language-selection">
+
+                <div class="language-box">
+                    <label for="sourceLanguage">Source Language</label>
+                    <select id="sourceLanguage">
+                        {% for code, language in languages.items() %}
+                            <option value="{{ code }}"
+                                {% if code == "auto" %}selected{% endif %}>
+                                {{ language }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <button id="swapButton" class="swap-button" title="Swap Languages">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <div class="language-box">
+                    <label for="targetLanguage">Target Language</label>
+                    <select id="targetLanguage">
+                        {% for code, language in languages.items() %}
+                            {% if code != "auto" %}
+                                <option value="{{ code }}"
+                                    {% if code == "ta" %}selected{% endif %}>
+                                    {{ language }}
+                                </option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="text-area-container">
+
+                <div class="text-box">
+                    <div class="text-box-header">
+                        <span>Enter Text</span>
+                        <span id="characterCount">0 / 5000</span>
+                    </div>
+
+                    <textarea id="inputText"
+                              placeholder="Type or paste your text here..."
+                              maxlength="5000"></textarea>
+                </div>
+
+                <div class="text-box">
+                    <div class="text-box-header">
+                        <span>Translated Text</span>
+
+                        <div class="action-buttons">
+                            <button id="copyButton" title="Copy Translation">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+
+                            <button id="speakButton" title="Listen to Translation">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <textarea id="outputText"
+                              placeholder="Your translation will appear here..."
+                              readonly></textarea>
+                </div>
+
+            </div>
+
+            <button id="translateButton" class="translate-button">
+                <i class="fa-solid fa-language"></i> Translate Now
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+        <footer>
+            <p>Connect with the world in every language.</p>
+        </footer>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
