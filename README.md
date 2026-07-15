@@ -1,10 +1,10 @@
-# 🌐 Language Translation Tool
+# Language Translation Tool
 
 A modern AI-powered **Language Translation Tool** built using **Python, Flask, HTML, CSS, JavaScript, and Google Translator (Deep Translator API)**. This application allows users to translate text between multiple languages with a simple and user-friendly interface.
 
 ---
 
-## 📌 Features
+##  Features
 
 - 🌍 Translate text into multiple languages
 - 🔍 Automatic source language detection
@@ -17,7 +17,7 @@ A modern AI-powered **Language Translation Tool** built using **Python, Flask, H
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - Python 3.x
 - Flask
@@ -29,7 +29,7 @@ A modern AI-powered **Language Translation Tool** built using **Python, Flask, H
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 language_translation_tool/
@@ -47,7 +47,7 @@ language_translation_tool/
 
 ---
 
-## ⚙ Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -81,7 +81,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 1. Enter the text you want to translate.
 2. Select the source language (or choose **Auto Detect**).
@@ -92,7 +92,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🌎 Supported Languages
+##  Supported Languages
 
 The application supports multiple languages including:
 
@@ -117,7 +117,7 @@ More languages can be added easily.
 
 ---
 
-## 📸 Application Features
+##  Application Features
 
 - Home Page
 - Language Selection
@@ -129,7 +129,7 @@ More languages can be added easily.
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Translation history
 - Voice input
@@ -141,28 +141,6 @@ More languages can be added easily.
 - User authentication
 - Favorite translations
 - Translation analytics
-
----
-
-## 📷 Screenshots
-
-Add screenshots of your application here.
-
-Example:
-
-- Home Page
-- Translation Output
-- Mobile View
-
----
-
-## 👨‍💻 Author
-
-**Name:** Your Name
-
-**Department:** Artificial Intelligence and Machine Learning (AIML)
-
-**College:** Anna University
 
 ---
 
